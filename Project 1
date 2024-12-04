@@ -1,0 +1,31 @@
+etrics
+mae = mean_absolute_error(y_test, y_pred)
+mse = mean_squared_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
+
+print(f"Mean Absolute Error: {mae}")
+print(f"Mean Squared Error: {mse}")
+print(f"R-squared: {r2}")
+```
+
+---
+
+### **Prediction:**
+```python
+# Predict score for a student who studies 9.25 hours
+hours = np.array([[9.25]])
+predicted_score = model.predict(hours)
+print(f"Predicted Score for 9.25 hours of study: {predicted_score[0]:.2f}")
+```
+
+---
+
+### **Explanation:**
+This project demonstrates the use of **Simple Linear Regression** to predict student scores based on their study hours.  
+1. **Correlation:** A positive correlation exists between study hours and scores.  
+2. **Model:** The linear regression model fit the data well, as evidenced by a high R-squared value.  
+3. **Predictions:** The model can predict scores for new input values, making it a practical tool for educators and students.  
+
+---
+
+Would you like the full code in a single block or help with setting it up?
